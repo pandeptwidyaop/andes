@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/admin');;
+});
+Route::get('/admin', function(){
+    return redirect('/admin/dashboard');
+});
+Route::get('/admin/dashboard', function(){
+    return view("admin.dashboard.index");
 });
