@@ -22,10 +22,8 @@
   </head>
   <body>
     <div class="page">
-      <!-- Main Navbar-->
       @include('layouts.header')
       <div class="page-content d-flex align-items-stretch">
-        <!-- Side Navbar -->
         @include('layouts.navbar',['nav' => $_nav])
         <div class="content-inner">
           @yield('content')
