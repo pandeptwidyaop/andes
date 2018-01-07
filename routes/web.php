@@ -51,6 +51,26 @@ Route::get("/admin/profile", function(){
     return view('admin.profile.index');
 });
 
+Route::get('/ketua', function(){
+    return redirect('ketua/dashboard');
+});
+
+Route::get("ketua/dashboard", function(){
+    return view('ketua.dashboard.index');
+});
+
+Route::get('ketua/anggota', function(){
+    return view('ketua.anggota.index');
+});
+
+Route::get('ketua/anggota/edit', function(){
+    return view('ketua.anggota.edit');
+});
+
+Route::get('ketua/rapat', function(){
+    return view('ketua.rapat.index');
+});
+
 /*
 ====================================================
               BENDAHARA dan SEKRETARIS
