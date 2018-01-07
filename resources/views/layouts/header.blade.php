@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="navbar-holder d-flex align-items-center justify-content-between">
         <div class="navbar-header">
-            <a href="index.html" class="navbar-brand">
+            <a href="{{url('')}}" class="navbar-brand">
             <div class="brand-text brand-big"><span>Ormawa </span><strong>Manager</strong></div>
             <div class="brand-text brand-small"><strong>OM</strong></div></a>
             <a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
