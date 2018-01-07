@@ -1,6 +1,6 @@
 <span class="heading">Main Menu</span>
 <ul class="list-unstyled">
-  <li class="active">
+  <li class="{{$nav_active == 'ormawa' ? 'active' : ''}}">
       <a href="#ormawaDropdown" aria-expanded="false" data-toggle="collapse">
           <i class="fa fa-users"></i>
           Ormawa
@@ -10,7 +10,7 @@
           <li><a href="{{url('admin/ormawa/create')}}">Tambah Ormawa</a></li>
         </ul>
   </li>
-  <li>
+  <li {{$nav_active == 'pengguna' ? 'active' : ''}}>
       <a href="#penggunaDropdown" aria-expanded="false" data-toggle="collapse">
           <i class="fa fa-user"></i>
           Pengguna
@@ -20,5 +20,5 @@
           <li><a href="{{url('admin/pengguna/create')}}">Tambah Pengguna</a></li>
         </ul>
   </li>
-  <li><a href="#"><i class="fa fa-child"></i>My Profile </a></li>
+  <li {{$nav_active == 'profile' ? 'active' : ''}}><a href="#"><i class="fa fa-child"></i>My Profile </a></li>
 </ul>

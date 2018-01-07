@@ -11,6 +11,12 @@
 |
 */
 
+
+/*
+====================================================
+              ADMIN dan KETUA
+====================================================
+*/
 Route::get('/', function () {
     return redirect('/admin');;
 });
@@ -21,6 +27,9 @@ Route::get('/admin/ormawa', function(){
     return view("admin.ormawa.index");
 });
 
+Route::get('/admin/ormawa/manage', function(){
+    return view('admin.ormawa.manage');
+});
 
 /*
 ====================================================
