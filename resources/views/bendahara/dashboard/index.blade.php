@@ -1,4 +1,4 @@
-@extends('layouts.app',['_nav' => 'bendahara'])
+@extends('layouts.app',['_nav' => 'bendahara','_nav_active' => 'dashboard'])
 @section('content')
     <!-- Page Header-->
     <header class="page-header">

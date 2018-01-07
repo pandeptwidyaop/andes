@@ -1,4 +1,4 @@
-@extends('layouts.app',['_nav' => 'bendahara'])
+@extends('layouts.app',['_nav' => 'bendahara','_nav_active' => 'kas'])
 @section('content')
     @component('layouts.components.header')
         Kas
