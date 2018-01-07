@@ -1,4 +1,4 @@
-@extends('layouts.app',['_nav' => 'sekretaris','_nav_active' => 'anggota'])
+@extends('layouts.app',['_nav' => 'ketua','_nav_active' => 'anggota'])
     @section('content')
         @component('layouts.components.header')
             Anggota
