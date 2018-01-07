@@ -22,24 +22,24 @@
                                     <div class="form-group">
                                       <label for="">Deskripsi Ormawa</label>
                                       <textarea name="desc" rows="8" cols="80" class="form-control">
-Sejarah HIMAPRODI SI
-	Himpunan Mahasiswa Program Studi Sistem Informasi atau yang lebih familiar dengan sebutan HIMAPRODI SI adalah sebuah himpunan atau kumpulan mahasiswa STMIK STIKOM Bali yang mengambil program studi atau jurusan sistem informasi. HIMAPRODI SI sendiri terbentuk pada tanggal 7 Maret 2013 yang pada saat itu didirikan oleh Bagus Sentana dan kawan – kawan. Awalnya Bagus Sentana bermaksud untuk mendirikan sebuah Ormas (Organisasi Masyarakat Kampus) yang anggotanya hanya untuk mahasiswa Sistem Informasi saja. Namun karena karena ada saran dari Pembantu Ketua 3 saat itu untuk mengganti nama karena tidak etis rasanya membuat sebuah Ormas dengan latar belakang mahasiswa kampus. Dan akhirnya dirubahlah namanya menjadi KOMASI atau Komite Mahasiswa Sistem Informasi, namun nama ini juga tidak disetujui, akhirnya setelah rapat dengan para pendirinya saat itu akhirya terlintaslah nama yaitu Himpunan Mahasiswa Program Studi Sistem Informasi yang paten sampai saat ini.
-Tujuan HIMAPRODI SI
-1.	Membantu Prodi Sistem Informasi dalam akreditasi.
+                                            Sejarah HIMAPRODI SI
+                                            	Himpunan Mahasiswa Program Studi Sistem Informasi atau yang lebih familiar dengan sebutan HIMAPRODI SI adalah sebuah himpunan atau kumpulan mahasiswa STMIK STIKOM Bali yang mengambil program studi atau jurusan sistem informasi. HIMAPRODI SI sendiri terbentuk pada tanggal 7 Maret 2013 yang pada saat itu didirikan oleh Bagus Sentana dan kawan – kawan. Awalnya Bagus Sentana bermaksud untuk mendirikan sebuah Ormas (Organisasi Masyarakat Kampus) yang anggotanya hanya untuk mahasiswa Sistem Informasi saja. Namun karena karena ada saran dari Pembantu Ketua 3 saat itu untuk mengganti nama karena tidak etis rasanya membuat sebuah Ormas dengan latar belakang mahasiswa kampus. Dan akhirnya dirubahlah namanya menjadi KOMASI atau Komite Mahasiswa Sistem Informasi, namun nama ini juga tidak disetujui, akhirnya setelah rapat dengan para pendirinya saat itu akhirya terlintaslah nama yaitu Himpunan Mahasiswa Program Studi Sistem Informasi yang paten sampai saat ini.
+                                            Tujuan HIMAPRODI SI
+                                            1.	Membantu Prodi Sistem Informasi dalam akreditasi.
 
-2.	Mengaktifkan kegiatan mahasiswa atau mahasiswi baik dari bidang akademik maupun non akademik bekerja sama dengan ormawa civitas Stikom Bali.
+                                            2.	Mengaktifkan kegiatan mahasiswa atau mahasiswi baik dari bidang akademik maupun non akademik bekerja sama dengan ormawa civitas Stikom Bali.
 
-3.	Menumbuhkan rasa solidaritas antar mahasisw/i dari berbagai angkatan.
-Sasaran HIMAPRODI SI
-HIMAPRODI mengkhususkan diri kedalam bidang kegiatan akademis , minat & bakat, dan sosial pada semua mahasiswa sistem informasi , karena bisa diikuti laki-laki ataupun perempuan, serta menjadi wadah bagi mahasiswa STMIK STIKOM Bali untuk mengembangkan potensi mereka dalam Prodi Sistem Informasi.
-Visi
-Menjadi organisasi yang menjunjung tinggi Tri Dharma Perguruan Tinggi.
-Misi
-1.	Sebagai wadah untuk mahasiswa program studi sistem informasi dalam pengembangan bidang akademik dan non akademik.
-2.	Sebagai perantara untuk mempererat hubungan silahturami antar mahasiswa/i program studi Sistem Informasi.
-3.	Meningkatkan kegiatan kampus bagi mahasiswa/i Sistem Informasi dengan bekerja sama dengan ORMAWA dalam civitas kampus STIKOM Bali.
-Semboyan HIMAPRODI SI
-We are integrated to be the first
+                                            3.	Menumbuhkan rasa solidaritas antar mahasisw/i dari berbagai angkatan.
+                                            Sasaran HIMAPRODI SI
+                                            HIMAPRODI mengkhususkan diri kedalam bidang kegiatan akademis , minat & bakat, dan sosial pada semua mahasiswa sistem informasi , karena bisa diikuti laki-laki ataupun perempuan, serta menjadi wadah bagi mahasiswa STMIK STIKOM Bali untuk mengembangkan potensi mereka dalam Prodi Sistem Informasi.
+                                            Visi
+                                            Menjadi organisasi yang menjunjung tinggi Tri Dharma Perguruan Tinggi.
+                                            Misi
+                                            1.	Sebagai wadah untuk mahasiswa program studi sistem informasi dalam pengembangan bidang akademik dan non akademik.
+                                            2.	Sebagai perantara untuk mempererat hubungan silahturami antar mahasiswa/i program studi Sistem Informasi.
+                                            3.	Meningkatkan kegiatan kampus bagi mahasiswa/i Sistem Informasi dengan bekerja sama dengan ORMAWA dalam civitas kampus STIKOM Bali.
+                                            Semboyan HIMAPRODI SI
+                                            We are integrated to be the first
 
                                       </textarea>
                                     </div>
@@ -66,7 +66,7 @@ We are integrated to be the first
                                         <td>{{$value['name']}}</td>
                                         <td>{{$value['position']}}</td>
                                         <td>
-                                            <a href="{{url('admin/pengguna/manage')}}" class="btn btn-success btn-sm">Manage</a>
+                                            <a href="{{url('admin/pengguna/edit')}}" class="btn btn-success btn-sm">Manage</a>
                                         </td>
                                     </tr>
                                 @endforeach
