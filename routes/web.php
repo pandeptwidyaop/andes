@@ -57,7 +57,7 @@ Route::get('/sekretaris/rapat', function(){
 Route::get('/sekretaris/surat-masuk', function(){
   return view('sekretaris.surat.surat-masuk');
 });
-Route::get('/sekretaris/surat-keluar', funtion(){
+Route::get('/sekretaris/surat-keluar', function(){
   return view('sekretaris.surat.surat-keluar');
 });
 
