@@ -15,8 +15,8 @@ Route::get('/', function () {
     return redirect('/admin');;
 });
 Route::get('/admin', function(){
-    return redirect('/admin/dashboard');
+    return redirect('/admin/ormawa');
 });
-Route::get('/admin/dashboard', function(){
-    return view("admin.dashboard.index");
+Route::get('/admin/ormawa', function(){
+    return view("admin.ormawa.index");
 });
