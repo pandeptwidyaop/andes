@@ -9,17 +9,17 @@ return [
         'ketua' => [
             'name' => 'Pradipta Adi Nugraha',
             'level' => 'Ketua',
-            'avatar' => ''
+            'avatar' => 'pradipta.jpg'
         ],
         'bendahara' => [
             'name' => 'I Made Darma Setiawan',
             'level' => 'Bendahara',
-            'avatar' => ''
+            'avatar' => 'dema.png'
         ],
-        'sekretari' => [
+        'sekretaris' => [
             'name' => 'Ni Komang Triana Putri',
             'level' => 'Sekretaris',
-            'avatar' => ''
+            'avatar' => 'triana.png'
         ]
     ]
 

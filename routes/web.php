@@ -20,3 +20,49 @@ Route::get('/admin', function(){
 Route::get('/admin/dashboard', function(){
     return view("admin.dashboard.index");
 });
+
+
+/*
+====================================================
+              BENDAHARA dan SEKRETARIS
+====================================================
+*/
+
+Route::get('/bendahara/dashboard', function(){
+  return view('bendahara.dashboard.index');
+});
+Route::get('/bendahara/kas', function(){
+  return view('bendahara.kas.index');
+});
+Route::get('/bendahara/pemasukan', function(){
+  return view('bendahara.pemasukan.index');
+});
+Route::get('/bendahara/pengeluaran', function(){
+  return view('bendahara.pengeluaran.index');
+});
+
+
+Route::get('/sekretaris/dashboard', function(){
+  return view('sekretaris.dashboard.index');
+});
+Route::get('/sekretaris/anggota', function(){
+  return view('sekretaris.anggota.index');
+});
+Route::get('/sekretaris/absen', function(){
+  return view('sekretaris.absen.index');
+});
+Route::get('/sekretaris/rapat', function(){
+  return view('sekretaris.rapat.index');
+});
+Route::get('/sekretaris/surat-masuk', function(){
+  return view('sekretaris.surat.surat-masuk');
+});
+Route::get('/sekretaris/surat-keluar', funtion(){
+  return view('sekretaris.surat.surat-keluar');
+});
+
+/*
+====================================================
+              End Of BENDAHARA dan SEKRETARIS
+====================================================
+*/
