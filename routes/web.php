@@ -90,8 +90,11 @@ Route::get('/sekretaris', function(){
 Route::get('/sekretaris/dashboard', function(){
   return view('sekretaris.dashboard.index');
 });
-Route::get('/sekretaris/anggota', function(){
+Route::get('/sekretaris/data-anggota', function(){
   return view('sekretaris.anggota.index');
+});
+Route::get('/sekretaris/tambah-anggota', function(){
+  return view('sekretaris.anggota.create');
 });
 Route::get('/sekretaris/absen', function(){
   return view('sekretaris.absen.index');

@@ -1,4 +1,4 @@
-@extends('layouts.app',['_nav' => 'sekretaris'])
+@extends('layouts.app',['_nav' => 'sekretaris','_nav_active' => 'dashboard'])
 @section('content')
     <!-- Page Header-->
     <header class="page-header">
