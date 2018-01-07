@@ -31,6 +31,10 @@ Route::get('/admin/ormawa/manage', function(){
     return view('admin.ormawa.manage');
 });
 
+Route::get('/admin/ormawa/create', function(){
+    return view('admin.ormawa.create');
+});
+
 /*
 ====================================================
               BENDAHARA dan SEKRETARIS
