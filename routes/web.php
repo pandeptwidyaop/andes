@@ -47,6 +47,10 @@ Route::get("/admin/pengguna/create", function(){
     return view('admin.pengguna.create');
 });
 
+Route::get("/admin/profile", function(){
+    return view('admin.profile.index');
+});
+
 /*
 ====================================================
               BENDAHARA dan SEKRETARIS

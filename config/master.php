@@ -4,22 +4,33 @@ return [
         'ketua' => [
             'name' => 'Pradipta Adi Nugraha',
             'level' => 'Ketua',
-            'avatar' => 'pradipta.jpg'
+            'avatar' => 'pradipta.jpg',
+            'email' => 'pradipta@teamlabs.id',
+            'username' => 'pande'
         ],
         'bendahara' => [
             'name' => 'I Made Darma Setiawan',
             'level' => 'Bendahara',
-            'avatar' => 'dema.png'
+            'avatar' => 'dema.png',
+            'email' => 'dema@teamlabs.id',
+            'username' => 'pande'
         ],
         'sekretaris' => [
             'name' => 'Ni Komang Triana Putri',
             'level' => 'Sekretaris',
-            'avatar' => 'triana.png'
+            'avatar' => 'triana.png',
+            'email' => 'triana@teamlabs.id',
+            'username' => 'pande'
         ],
         'admin' => [
             'name' => 'Pande Putu Widya Oktapratama',
             'level' => 'Administrator',
-            'avatar' => 'pande.jpg'
+            'avatar' => 'pande.jpg',
+            'email' => 'pande@teamlabs.id',
+            'username' => 'pande',
+            'birthday' => '19-10-1997',
+            'phone' => '085737484960',
+            'address' => 'Jalan Gunung Agung Gang Bumi Ayu G No 17'
         ],
     ],
 

@@ -18,5 +18,5 @@
           <li><a href="{{url('admin/pengguna/create')}}">Tambah Pengguna</a></li>
         </ul>
   </li>
-  <li class="{{$nav_active == 'profile' ? 'active' : ''}}"><a href="#"><i class="fa fa-child"></i>My Profile </a></li>
+  <li class="{{$nav_active == 'profile' ? 'active' : ''}}"><a href="{{url('admin/profile')}}"><i class="fa fa-child"></i>My Profile </a></li>
 </ul>
