@@ -1,11 +1,6 @@
 <?php
 return [
     'users' => [
-        'admin' => [
-            'name' => 'Pande Putu Widya Oktapratama',
-            'level' => 'Administrator',
-            'avatar' => 'pande.jpg'
-        ],
         'ketua' => [
             'name' => 'Pradipta Adi Nugraha',
             'level' => 'Ketua',
@@ -20,7 +15,12 @@ return [
             'name' => 'Ni Komang Triana Putri',
             'level' => 'Sekretaris',
             'avatar' => 'triana.png'
-        ]
+        ],
+        'admin' => [
+            'name' => 'Pande Putu Widya Oktapratama',
+            'level' => 'Administrator',
+            'avatar' => 'pande.jpg'
+        ],
     ],
 
     'ormawa' => [
@@ -117,6 +117,29 @@ return [
             'position' => 'Sekretaris'
         ],
         '2' => [
+            'periode' => '2015/2016',
+            'username' => 'diana02',
+            'name' => 'I Made Darma Setiawan',
+            'position' => 'Bendahara'
+        ],
+    ],
+    'pengguna_data' => [
+        '0' => [
+            'ormawa' => 'HIMAPRODI Sistem Informasi',
+            'periode' => '2015/2016',
+            'username' => 'pradipta',
+            'name'=> 'I Gede Pradipta Adi Nugraha',
+            'position' => 'Ketua'
+        ],
+        '1' => [
+            'ormawa' => 'HIMAPRODI Sistem Informasi',
+            'periode' => '2015/2016',
+            'username' => 'oming25',
+            'name' => 'Ni Komang Triana Putri',
+            'position' => 'Sekretaris'
+        ],
+        '2' => [
+            'ormawa' => 'HIMAPRODI Sistem Informasi',
             'periode' => '2015/2016',
             'username' => 'diana02',
             'name' => 'I Made Darma Setiawan',

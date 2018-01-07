@@ -35,6 +35,18 @@ Route::get('/admin/ormawa/create', function(){
     return view('admin.ormawa.create');
 });
 
+Route::get('/admin/pengguna', function(){
+    return view('admin.pengguna.index');
+});
+
+Route::get("/admin/pengguna/edit", function(){
+    return view('admin.pengguna.edit');
+});
+
+Route::get("/admin/pengguna/create", function(){
+    return view('admin.pengguna.create');
+});
+
 /*
 ====================================================
               BENDAHARA dan SEKRETARIS

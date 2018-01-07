@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{asset("css/fontastic.css")}}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
     @stack('css')
-    <link rel="stylesheet" href="{{asset("css/style.default.css")}}" id="theme-stylesheet">
+    <link rel="stylesheet" href="{{asset("css/style.blue.css")}}" id="theme-stylesheet">
     <link rel="stylesheet" href="{{asset("css/custom.css")}}">
     <link rel="shortcut icon" href="{{asset("img/favicon.ico")}}">
 

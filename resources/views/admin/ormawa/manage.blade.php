@@ -66,7 +66,7 @@
                                         <td>{{$value['name']}}</td>
                                         <td>{{$value['position']}}</td>
                                         <td>
-                                            <a href="{{url('admin/pengguna/manage')}}" class="btn btn-success btn-sm">Manage</a>
+                                            <a href="{{url('admin/pengguna/edit')}}" class="btn btn-success btn-sm">Manage</a>
                                         </td>
                                     </tr>
                                 @endforeach
