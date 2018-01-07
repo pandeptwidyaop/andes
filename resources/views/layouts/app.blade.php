@@ -24,7 +24,7 @@
     <div class="page">
       @include('layouts.header')
       <div class="page-content d-flex align-items-stretch">
-        @include('layouts.navbar',['nav' => $_nav])
+        @include('layouts.navbar',['nav' => $_nav,'nav_active' => $_nav_active])
         <div class="content-inner">
           @yield('content')
           @include('layouts.footer')

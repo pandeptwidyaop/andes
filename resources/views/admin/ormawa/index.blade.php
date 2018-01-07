@@ -1,4 +1,4 @@
-@extends('layouts.app',['_nav' => 'admin'])
+@extends('layouts.app',['_nav' => 'admin','_nav_active' => 'ormawa'])
 @section('content')
     @component('layouts.components.header')
         Ormawa
@@ -17,8 +17,31 @@
                         <thead>
                             <tr>
                                 <th>Nama Ormawa</th>
+                                <th>Jumlah Angkatan</th>
+                                <th>Jumlah Pengurus</th>
+                                <th>Opsi</th>
                             </tr>
                         </thead>
+                        <tbody>
+                            @foreach (config('master.ormawa') as $key => $value)
+                                <tr>
+                                    <td>{{$value['name']}}</td>
+                                    <td>
+                                        @foreach ($value['periodes'] as $index)
+                                            {{$index}} <br>
+                                        @endforeach
+                                    </td>
+                                    <td>
+                                        @foreach ($value['administrators'] as $index)
+                                            {{$index}} akun <br>
+                                        @endforeach
+                                    </td>
+                                    <td>
+                                        <a href="{{url('admin/ormawa/manage')}}"><i class="fa fa-pencil"></i> manage</a> | <a href=""><i class="fa fa-trash"></i> hapus</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
                     </table>
                 @endcomponent
             </div>
