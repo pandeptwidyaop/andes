@@ -35,7 +35,7 @@ Route::get('/bendahara/dashboard', function(){
   return view('bendahara.dashboard.index');
 });
 Route::get('/bendahara/kas', function(){
-  return view('bendahara.kas.index');
+  return view('bendahara.kas.create');
 });
 Route::get('/bendahara/tambah-kas', function(){
   return view('bendahara.kas.tambah-kas');
