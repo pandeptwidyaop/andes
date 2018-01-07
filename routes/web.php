@@ -116,7 +116,7 @@ Route::get('/sekretaris/data-anggota', function(){
 Route::get('/sekretaris/tambah-anggota', function(){
   return view('sekretaris.anggota.create');
 });
-Route::get('/sekretaris/absen', function(){
+Route::get('/sekretaris/data-absen', function(){
   return view('sekretaris.absen.index');
 });
 Route::get('/sekretaris/rapat', function(){
