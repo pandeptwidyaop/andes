@@ -84,22 +84,25 @@ Route::get('/bendahara/dashboard', function(){
   return view('bendahara.dashboard.index');
 });
 Route::get('/bendahara/kas', function(){
-  return view('bendahara.kas.create');
+  return view('bendahara.kas.index');
 });
 Route::get('/bendahara/tambah-kas', function(){
-  return view('bendahara.kas.tambah-kas');
+  return view('bendahara.kas.create');
 });
 Route::get('/bendahara/pemasukan', function(){
   return view('bendahara.pemasukan.index');
 });
 Route::get('/bendahara/tambah-pemasukan', function(){
-  return view('bendahara.pemasukan.tambah-pemasukan');
+  return view('bendahara.pemasukan.create');
 });
 Route::get('/bendahara/pengeluaran', function(){
   return view('bendahara.pengeluaran.index');
 });
 Route::get('/bendahara/tambah-pengeluaran', function(){
-  return view('bendahara.pengeluaran.tambah-pengeluaran');
+  return view('bendahara.pengeluaran.index');
+});
+Route::get('/bendahara/profile', function(){
+  return view('bendahara.profile.index');
 });
 
 
