@@ -140,6 +140,9 @@ Route::get('/sekretaris/surat-keluar', function(){
 Route::get('/sekretaris/tambah-surat-keluar', function(){
   return view('sekretaris.sent-letter.create');
 });
+Route::get('/sekretaris/profile', function(){
+  return view('sekretaris.profile.index');
+});
 
 /*
 ====================================================

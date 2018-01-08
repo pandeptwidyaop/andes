@@ -25,7 +25,7 @@
                                     <tr>
                                         <td>Permohonan Partisipasi : UKM Futsal</td>
                                         <td>095/UKM.FUTSAL/SEMA.STIKOM/XII/2017</td>
-                                        <td><img src="{{asset('img/surat-masuk.jpg')}}" class="img-fluid" style="cursor:pointer" id="tampilSurat1"></td>
+                                        <td><a href="{{asset('img/surat-masuk.jpg')}}"><img src="{{asset('img/surat-masuk.jpg')}}" class="img-fluid"></a></td>
                                         <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
                                         <td>
                                           <a href="javascript:void();" onclick="editSurat()"><i class="fa fa-edit"></i></a>
@@ -35,7 +35,7 @@
                                     <tr>
                                         <td>Undangan Menghadiri Kegiatan : UKM BOSS</td>
                                         <td>214/UKM.KMHD/SEMA.STIKOM/XI/2017</td>
-                                        <td><a href="javascript:void();" onclick="tampilSurat2">
+                                        <td><a href="{{asset('img/surat-keluar.jpg')}}">
                                           <img src="{{asset('img/surat-keluar.jpg')}}" class="img-fluid"></a></td>
                                         <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
                                         <td>
@@ -49,15 +49,6 @@
                 </div>
             </div>
           </section>
-          <div class="modal fade text-left" id="tampilModal1" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <img class="img-fluid" id="image01">
-                </div>
-              </div>
-            </div>
-          </div>
             <div class="modal fade text-left" id="editModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -117,13 +108,5 @@
             function editSurat(){
                 $("#editModal").modal('show');
             }
-
-            var img = document.getElementById('tampilSurat1');
-            var modalImg = document.getElementById('image01');
-            img.onclick = function(){
-              modal.style.display = "block";
-              modalImg.src = this.src;
-            }
-
         </script>
     @endpush
