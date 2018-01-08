@@ -129,10 +129,16 @@ Route::get('/sekretaris/tambah-data-rapat', function(){
   return view('sekretaris.rapat.create');
 });
 Route::get('/sekretaris/surat-masuk', function(){
-  return view('sekretaris.surat.surat-masuk');
+  return view('sekretaris.received-letter.index');
+});
+Route::get('/sekretaris/tambah-surat-masuk', function(){
+  return view('sekretaris.received-letter.create');
 });
 Route::get('/sekretaris/surat-keluar', function(){
-  return view('sekretaris.surat.surat-keluar');
+  return view('sekretaris.sent-letter.index');
+});
+Route::get('/sekretaris/tambah-surat-keluar', function(){
+  return view('sekretaris.sent-letter.create');
 });
 
 /*

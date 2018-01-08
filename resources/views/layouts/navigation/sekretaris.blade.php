@@ -22,13 +22,14 @@
         <li><a href="{{asset('sekretaris/tambah-data-rapat')}}">Tambah Data Rapat</a></li>
       </ul>
     </li>
-      <li><a href="#dropdownSuratMasuk" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Surat Masuk </a>
-        <ul id="dropdownSuratMasuk" class="collapse list-unstyled ">
-          <li><a href="{{asset('sekretaris/surat-masuk')}}">Data Surat Masuk</a></li>
-          <li><a href="{{asset('sekretaris/tambah-surat-masuk')}}">Tambah Surat Masuk</a></li>
+    <li class="{{$nav_active == 'received-letter' ? 'active' : ''}}">
+      <a href="#dropdownSuratMasuk" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Surat Masuk </a>
+      <ul id="dropdownSuratMasuk" class="collapse list-unstyled ">
+        <li><a href="{{asset('sekretaris/surat-masuk')}}">Data Surat Masuk</a></li>
+        <li><a href="{{asset('sekretaris/tambah-surat-masuk')}}">Tambah Surat Masuk</a></li>
       </ul>
     </li>
-    <li><a href="#dropdownSuratKeluar" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Surat Keluar </a>
+    <li class="{{$nav_active == 'sent-letter' ? 'active' : ''}}"><a href="#dropdownSuratKeluar" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Surat Keluar </a>
       <ul id="dropdownSuratKeluar" class="collapse list-unstyled ">
         <li><a href="{{asset('sekretaris/surat-keluar')}}">Data Surat Keluar</a></li>
         <li><a href="{{asset('sekretaris/tambah-surat-keluar')}}">Tambah Surat Keluar</a></li>
