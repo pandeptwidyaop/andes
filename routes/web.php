@@ -119,8 +119,14 @@ Route::get('/sekretaris/tambah-anggota', function(){
 Route::get('/sekretaris/data-absen', function(){
   return view('sekretaris.absen.index');
 });
-Route::get('/sekretaris/rapat', function(){
+Route::get('/sekretaris/tambah-absen', function(){
+  return view('sekretaris.absen.create');
+});
+Route::get('/sekretaris/data-rapat', function(){
   return view('sekretaris.rapat.index');
+});
+Route::get('/sekretaris/tambah-data-rapat', function(){
+  return view('sekretaris.rapat.create');
 });
 Route::get('/sekretaris/surat-masuk', function(){
   return view('sekretaris.surat.surat-masuk');

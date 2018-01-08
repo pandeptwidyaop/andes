@@ -19,7 +19,7 @@
       <a href="#dropdownRapat" aria-expanded="false" data-toggle="collapse"><i class="icon-interface-windows"></i>Rapat </a>
       <ul id="dropdownRapat" class="collapse list-unstyled ">
         <li><a href="{{asset('sekretaris/data-rapat')}}">Data Rapat</a></li>
-        <li><a href="{{asset('sekretaris/tambah-rapat')}}">Tambah Data Rapat</a></li>
+        <li><a href="{{asset('sekretaris/tambah-data-rapat')}}">Tambah Data Rapat</a></li>
       </ul>
     </li>
       <li><a href="#dropdownSuratMasuk" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Surat Masuk </a>

@@ -4,7 +4,7 @@
             Absen
         @endcomponent
         @component('layouts.components.breadcrumb')
-            <li class="breadcrumb-item"><a href="{{url('admin/dashboard')}}">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="{{url('sekretaris/dashboard')}}">Dashboard</a></li>
             <li class="breadcrumb-item active">Absen </li>
         @endcomponent
         <section class="forms">
@@ -39,14 +39,14 @@
                     @endcomponent
                 </div>
             </div>
-        </section>
 
-        <section class="forms">
             <div class="container-fluid">
                 <div class="row">
                     @component('layouts.components.card',['class' => 'col-md-12','title' => 'Data Absensi'])
-                        <br><br>
-                        <table class="table" id="table">
+                      <p style="font-size:20px;margin-bottom:-5px">Anggota yang belum terdaftar pada absen : Rapat Perdana</p>
+                        <p style="font-size:15px">Centang untuk memasukkan anggota ke absen.</p>
+
+                        <table class="table table-bordered" id="table">
                             <thead>
                                 <tr>
                                     <th>NIM</th>
@@ -58,6 +58,7 @@
                                 </tr>
                             </thead>
                             <tbody>
+                              @for ($i=1; $i < 2; $i++)
                                 @foreach (json_decode(config('master.members')) as $member)
                                     <tr>
                                         <td>{{$member->nim}}</td>
@@ -66,11 +67,11 @@
                                         <td>{{$member->handphone}}</td>
                                         <td>{{$member->sex}}</td>
                                         <td>
-                                            <a href="javascript:void();" onclick="editMember()"><i class="fa fa-edit"></i></a>
-                                            <a href="#"><i class="fa fa-trash"></i></a>
+                                          <center><input class="form-check-input" style="margin-left:-4px" type="checkbox" id="inlineCheckbox1"></center>
                                         </td>
                                     </tr>
                                 @endforeach
+                              @endfor
                             </tbody>
                         </table>
                         <button type="button" class="btn btn-primary pull-right" style="margin-right:35px;margin-top:10px">Simpan</button>
