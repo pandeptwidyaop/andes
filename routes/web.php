@@ -71,6 +71,10 @@ Route::get('ketua/rapat', function(){
     return view('ketua.rapat.index');
 });
 
+Route::get('ketua/surat/masuk', function(){
+    return view("ketua.surat.masuk.index");
+});
+
 /*
 ====================================================
               BENDAHARA dan SEKRETARIS
