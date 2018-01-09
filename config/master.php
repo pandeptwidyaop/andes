@@ -6,21 +6,30 @@ return [
             'level' => 'Ketua',
             'avatar' => 'pradipta.jpg',
             'email' => 'pradipta@teamlabs.id',
-            'username' => 'pande'
+            'username' => 'pradipta31',
+            'birthday' => '11-08-1997',
+            'phone' => '087861863842',
+            'address' => 'Jalan Pratu Made Rambug, Gg. Bija V'
         ],
         'bendahara' => [
             'name' => 'I Made Darma Setiawan',
             'level' => 'Bendahara',
             'avatar' => 'dema.png',
             'email' => 'dema@teamlabs.id',
-            'username' => 'pande'
+            'username' => 'demardcl',
+            'birthday' => '25-03-1997',
+            'phone' => '085737484960',
+            'address' => 'Semawang, Sanur'
         ],
         'sekretaris' => [
             'name' => 'Ni Komang Triana Putri',
             'level' => 'Sekretaris',
             'avatar' => 'triana.png',
             'email' => 'triana@teamlabs.id',
-            'username' => 'pande'
+            'username' => 'trianaputri33',
+            'birthday' => '25-10-1997',
+            'phone' => '085737484960',
+            'address' => 'Mengwi, Badung'
         ],
         'admin' => [
             'name' => 'Pande Putu Widya Oktapratama',

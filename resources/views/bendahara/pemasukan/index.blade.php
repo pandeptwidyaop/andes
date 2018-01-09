@@ -27,7 +27,7 @@
                                         <td>Sponsor Lapangan</td>
                                         <td>200000</td>
                                         <td>
-                                          <center><a href="javascript:void();" onclick="editKas()"><i class="fa fa-edit"></i></a>
+                                          <center><a href="javascript:void();" onclick="editData()"><i class="fa fa-edit"></i></a>
                                           <a href="#"><i class="fa fa-trash"></i></a></center>
                                         </td>
                                     </tr>
@@ -37,7 +37,7 @@
                                         <td>Sponsor Lapangan</td>
                                         <td>1250000</td>
                                         <td>
-                                          <center><a href="javascript:void();" onclick="editKas()"><i class="fa fa-edit"></i></a>
+                                          <center><a href="javascript:void();" onclick="editData()"><i class="fa fa-edit"></i></a>
                                           <a href="#"><i class="fa fa-trash"></i></a></center>
                                         </td>
                                     </tr>
@@ -51,7 +51,7 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                     <h4 class="modal-title" id="">Edit Data Kas</h4>
+                     <h4 class="modal-title" id="">Edit Data Pemasukan</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
@@ -99,7 +99,7 @@
                     })
             });
 
-            function editKas(){
+            function editData(){
                 $("#editModal").modal('show');
             }
         </script>

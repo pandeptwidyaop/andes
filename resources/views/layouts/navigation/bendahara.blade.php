@@ -30,5 +30,5 @@
               <li><a href="{{asset('bendahara/tambah-pengeluaran')}}">Tambah Pengeluaran</a></li>
             </ul>
           </li>
-          <li class="{{$nav_active == 'profile' ? 'active' : ''}}"> <a href="#"> <i class="icon-flask"></i>My Profile </a></li>
+          <li class="{{$nav_active == 'profile' ? 'active' : ''}}"> <a href="{{asset('bendahara/profile')}}"> <i class="icon-flask"></i>My Profile </a></li>
 </ul>

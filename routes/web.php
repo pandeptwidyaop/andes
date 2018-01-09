@@ -99,7 +99,7 @@ Route::get('/bendahara/pengeluaran', function(){
   return view('bendahara.pengeluaran.index');
 });
 Route::get('/bendahara/tambah-pengeluaran', function(){
-  return view('bendahara.pengeluaran.index');
+  return view('bendahara.pengeluaran.create');
 });
 Route::get('/bendahara/profile', function(){
   return view('bendahara.profile.index');
