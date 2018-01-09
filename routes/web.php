@@ -77,37 +77,74 @@ Route::get('ketua/rapat', function(){
 ====================================================
 */
 
+Route::get('/bendahara', function(){
+  return redirect('/bendahara/dashboard');
+});
 Route::get('/bendahara/dashboard', function(){
   return view('bendahara.dashboard.index');
 });
 Route::get('/bendahara/kas', function(){
   return view('bendahara.kas.index');
 });
+Route::get('/bendahara/tambah-kas', function(){
+  return view('bendahara.kas.create');
+});
 Route::get('/bendahara/pemasukan', function(){
   return view('bendahara.pemasukan.index');
+});
+Route::get('/bendahara/tambah-pemasukan', function(){
+  return view('bendahara.pemasukan.create');
 });
 Route::get('/bendahara/pengeluaran', function(){
   return view('bendahara.pengeluaran.index');
 });
+Route::get('/bendahara/tambah-pengeluaran', function(){
+  return view('bendahara.pengeluaran.index');
+});
+Route::get('/bendahara/profile', function(){
+  return view('bendahara.profile.index');
+});
 
 
+
+Route::get('/sekretaris', function(){
+  return redirect('sekretaris/dashboard');
+});
 Route::get('/sekretaris/dashboard', function(){
   return view('sekretaris.dashboard.index');
 });
-Route::get('/sekretaris/anggota', function(){
+Route::get('/sekretaris/data-anggota', function(){
   return view('sekretaris.anggota.index');
 });
-Route::get('/sekretaris/absen', function(){
+Route::get('/sekretaris/tambah-anggota', function(){
+  return view('sekretaris.anggota.create');
+});
+Route::get('/sekretaris/data-absen', function(){
   return view('sekretaris.absen.index');
 });
-Route::get('/sekretaris/rapat', function(){
+Route::get('/sekretaris/tambah-absen', function(){
+  return view('sekretaris.absen.create');
+});
+Route::get('/sekretaris/data-rapat', function(){
   return view('sekretaris.rapat.index');
 });
+Route::get('/sekretaris/tambah-data-rapat', function(){
+  return view('sekretaris.rapat.create');
+});
 Route::get('/sekretaris/surat-masuk', function(){
-  return view('sekretaris.surat.surat-masuk');
+  return view('sekretaris.received-letter.index');
+});
+Route::get('/sekretaris/tambah-surat-masuk', function(){
+  return view('sekretaris.received-letter.create');
 });
 Route::get('/sekretaris/surat-keluar', function(){
-  return view('sekretaris.surat.surat-keluar');
+  return view('sekretaris.sent-letter.index');
+});
+Route::get('/sekretaris/tambah-surat-keluar', function(){
+  return view('sekretaris.sent-letter.create');
+});
+Route::get('/sekretaris/profile', function(){
+  return view('sekretaris.profile.index');
 });
 
 /*

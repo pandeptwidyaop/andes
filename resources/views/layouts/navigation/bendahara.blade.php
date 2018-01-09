@@ -1,21 +1,34 @@
 <span class="heading">Main</span>
 <ul class="list-unstyled">
-          <li><a href="{{asset('bendahara/dashboard')}}"> <i class="icon-home"></i>Home </a></li>
-          <li><a href="{{asset('bendahara/kas')}}"> <i class="fa fa-money"></i>Kas </a></li>
-          <li><a href="{{asset('bendahara/pemasukan')}}"> <i class="fa fa-bar-chart"></i>Pemasukan </a></li>
-          <li><a href="{{asset('bendahara/pengeluaran')}}"> <i class="icon-padnote"></i>Pengeluaran </a></li>
-          <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Example dropdown </a>
-            <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-              <li><a href="#">Page</a></li>
-              <li><a href="#">Page</a></li>
-              <li><a href="#">Page</a></li>
+          <li class="{{$nav_active == 'dashboard' ? 'active' : ''}}">
+            <a href="{{asset('bendahara/dashboard')}}"> <i class="fa fa-dashboard"></i>Dashboard </a>
+          </li>
+          <li class="{{$nav_active == 'kas' ? 'active' : ''}}">
+            <a href="#dropdownKas" aria-expanded="false" data-toggle="collapse">
+              <i class="fa fa-group"></i>Kas
+            </a>
+            <ul id="dropdownKas" class="collapse list-unstyled ">
+              <li><a href="{{asset('bendahara/kas')}}">Data Kas</a></li>
+              <li><a href="{{asset('bendahara/tambah-kas')}}">Tambah Kas</a></li>
             </ul>
           </li>
-          <li><a href="login.html"> <i class="icon-interface-windows"></i>Login page </a></li>
-</ul><span class="heading">Extras</span>
-<ul class="list-unstyled">
-  <li> <a href="#"> <i class="icon-flask"></i>Demo </a></li>
-  <li> <a href="#"> <i class="icon-screen"></i>Demo </a></li>
-  <li> <a href="#"> <i class="icon-mail"></i>Demo </a></li>
-  <li> <a href="#"> <i class="icon-picture"></i>Demo </a></li>
+          <li class="{{$nav_active == 'pemasukan' ? 'active' : ''}}">
+          <a href="#dropdownPemasukan" aria-expanded="false" data-toggle="collapse">
+            <i class="fa fa-money">
+            </i>Pemasukan
+          </a>
+            <ul id="dropdownPemasukan" class="collapse list-unstyled ">
+              <li><a href="{{asset('bendahara/pemasukan')}}">Data Pemasukan</a></li>
+              <li><a href="{{asset('bendahara/tambah-pemasukan')}}">Tambah Pemasukan</a></li>
+            </ul>
+          </li>
+          <li class="{{$nav_active == 'pengeluaran' ? 'active' : ''}}">
+            <a href="#dropdownPengeluaran" aria-expanded="false" data-toggle="collapse">
+              <i class="fa fa-money"></i>Pengeluaran </a>
+            <ul id="dropdownPengeluaran" class="collapse list-unstyled ">
+              <li><a href="{{asset('bendahara/pengeluaran')}}">Data Pengeluaran</a></li>
+              <li><a href="{{asset('bendahara/tambah-pengeluaran')}}">Tambah Pengeluaran</a></li>
+            </ul>
+          </li>
+          <li class="{{$nav_active == 'profile' ? 'active' : ''}}"> <a href="#"> <i class="icon-flask"></i>My Profile </a></li>
 </ul>

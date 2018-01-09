@@ -75,7 +75,7 @@ return [
             ]
         ],
         '3' => [
-            'name' => 'UKM BOS',
+            'name' => 'UKM BOSS',
             'periodes' => [
                 '0' => '2015/2016',
                 '1' => '2016/2017',
