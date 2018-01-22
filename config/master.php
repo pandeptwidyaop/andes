@@ -213,7 +213,30 @@ return [
             {"id":"ea740aa0-816b-11e7-aedb-2111cf029add","nim":"160030172","name":"KIKI ADELYA","email":"ade_198@ymail.com","handphone":"085738796657","address":"Jalan Astina Selatan No.  13 Gianyar","birthday":"1998-07-19","sex":"female","created_at":"2017-08-14 20:43:35","updated_at":"2017-08-14 20:43:35"},
             {"id":"ed83e180-8660-11e7-95cb-b1fa3b9953d6","nim":"160030502","name":"I MADE DUWI AGUS SAPUTRA","email":"agussaputra1135@gmail.com","handphone":"089660010037","address":"Anyelir no 1","birthday":"1998-06-05","sex":"male","created_at":"2017-08-21 04:07:31","updated_at":"2017-08-21 04:07:31"},
             {"id":"fc4ca9a0-8657-11e7-bcae-e15e18b735a5","nim":"140030114","name":"I KADEK OKA WIRA KUSUMA","email":"okadek@gmail.com","handphone":"087761574802","address":"Kerambitan Tabanan","birthday":"1996-12-03","sex":"male","created_at":"2017-08-21 03:03:31","updated_at":"2017-08-21 03:03:31"}
-        ]'
+        ]',
+        'in_letters' => [
+            '0' => [
+                'title' => 'Undangan Mengahdiri Kegiatan : MAKRAB SI',
+                'number' => '046/HIMAPRODI.SI/SEMA.STIKOM/XII/2016',
+                'pictures' => [
+                    '0' => 'img/surat-masuk.jpg',
+                    '1' => 'img/surat-keluar.jpg'
+                ],
+                'description' => 'Diterima oleh Kadek Dwi pada 19/10/2016',
+                'date' => '19 Oktober 2016'
+            ],
+            '1' => [
+                'title' => 'Undangan Mengahdiri Kegiatan : MAKRAB SI',
+                'number' => '046/HIMAPRODI.SI/SEMA.STIKOM/XII/2016',
+                'pictures' => [
+                    '0' => 'img/surat-masuk.jpg',
+                    '1' => 'img/surat-keluar.jpg'
+                ],
+                'description' => 'Diterima oleh Kadek Dwi pada 19/10/2016',
+                'date' => '19 Oktober 2016'
+            ],
+        ],
+
 
 
 ];
