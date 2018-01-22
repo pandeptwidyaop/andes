@@ -83,6 +83,10 @@ Route::get('ketua/laporan/anggota', function(){
     return view('ketua.laporan.anggota');
 });
 
+Route::get('ketua/laporan/keuangan', function(){
+    return view('ketua.laporan.keuangan');
+});
+
 /*
 ====================================================
               BENDAHARA dan SEKRETARIS

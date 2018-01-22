@@ -10,6 +10,10 @@
         <div class="container-fluid">
             <div class="row">
                 @component('layouts.components.card',['class' => 'col-md-12','title'=> 'Data Laporan Anggota'])
+                    <button type="button" name="button" class="btn btn-primary"><i class="fa fa-print"></i> Print</button>
+                    <button type="button"class="btn btn-success"><i class="fa fa-download"></i> Download (*.xlsx)</button>
+                    <br>
+                    <br>
                     <table class="table table-bordered">
                         <thead>
                             <tr>
