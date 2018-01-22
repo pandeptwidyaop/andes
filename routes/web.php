@@ -18,7 +18,7 @@
 ====================================================
 */
 Route::get('/', function () {
-    return redirect('/admin');;
+    return redirect('/admin');
 });
 Route::get('/admin', function(){
     return redirect('/admin/ormawa');
