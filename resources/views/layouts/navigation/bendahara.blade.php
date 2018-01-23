@@ -30,15 +30,15 @@
         <li><a href="{{asset('bendahara/tambah-pengeluaran')}}">Tambah Pengeluaran</a></li>
       </ul>
     </li>
-    <li class="{{$nav_active == 'report' ? 'active' : ''}}">
+    <li class="{{$nav_active == 'laporan' ? 'active' : ''}}">
       <a href="#dropdownReport" aria-expanded="false" data-toggle="collapse">
         <i class="fa fa-paper-plane"></i>Laporan Keuangan
       </a>
       <ul id="dropdownReport" class="collapse list-unstyled ">
+        <li><a href="{{asset('bendahara/laporan-kas')}}">Laporan Kas</a></li>
         <li><a href="{{asset('bendahara/laporan-pemasukan')}}">Laporan Pemasukan</a></li>
         <li><a href="{{asset('bendahara/laporan-pengeluaran')}}">Laporan Pengeluaran</a></li>
-        <li><a href="{{asset('bendahara/laporan-kas')}}">Laporan Kas</a></li>
       </ul>
     </li>
-    <li class="{{$nav_active == 'profile' ? 'active' : ''}}"> <a href="#"> <i class="icon-flask"></i>My Profile </a></li>
+    <li class="{{$nav_active == 'profile' ? 'active' : ''}}"> <a href="{{asset('bendahara/profile')}}"> <i class="icon-flask"></i>My Profile </a></li>
   </ul>
