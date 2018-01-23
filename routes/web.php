@@ -18,7 +18,7 @@
 ====================================================
 */
 Route::get('/', function () {
-    return redirect('/admin');
+return redirect('/admin');
 });
 Route::get('/admin', function(){
     return redirect('/admin/ormawa');
@@ -71,6 +71,25 @@ Route::get('ketua/rapat', function(){
     return view('ketua.rapat.index');
 });
 
+Route::get('ketua/surat/masuk', function(){
+    return view("ketua.surat.masuk.index");
+});
+
+Route::get('ketua/surat/keluar', function(){
+    return view("ketua.surat.keluar.index");
+});
+
+Route::get('ketua/laporan/anggota', function(){
+    return view('ketua.laporan.anggota');
+});
+
+Route::get('ketua/laporan/keuangan', function(){
+    return view('ketua.laporan.keuangan');
+});
+
+Route::get('ketua/pengurus', function(){
+    return view('ketua.pengurus.index');
+});
 /*
 ====================================================
               BENDAHARA dan SEKRETARIS
@@ -99,7 +118,16 @@ Route::get('/bendahara/pengeluaran', function(){
   return view('bendahara.pengeluaran.index');
 });
 Route::get('/bendahara/tambah-pengeluaran', function(){
-  return view('bendahara.pengeluaran.index');
+  return view('bendahara.pengeluaran.create');
+});
+Route::get('/bendahara/laporan-kas', function(){
+  return view('bendahara.laporan.kas.index');
+});
+Route::get('/bendahara/laporan-pemasukan', function(){
+  return view('bendahara.laporan.pemasukan.index');
+});
+Route::get('/bendahara/laporan-pengeluaran', function(){
+  return view('bendahara.laporan.pengeluaran.index');
 });
 Route::get('/bendahara/profile', function(){
   return view('bendahara.profile.index');
@@ -142,6 +170,15 @@ Route::get('/sekretaris/surat-keluar', function(){
 });
 Route::get('/sekretaris/tambah-surat-keluar', function(){
   return view('sekretaris.sent-letter.create');
+});
+Route::get('/sekretaris/laporan-anggota', function(){
+  return view('sekretaris.laporan.anggota.index');
+});
+Route::get('/sekretaris/laporan-surat-masuk', function(){
+  return view('sekretaris.laporan.surat-masuk.index');
+});
+Route::get('/sekretaris/laporan-surat-keluar', function(){
+  return view('sekretaris.laporan.surat-keluar.index');
 });
 Route::get('/sekretaris/profile', function(){
   return view('sekretaris.profile.index');

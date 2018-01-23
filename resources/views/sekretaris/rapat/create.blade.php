@@ -39,7 +39,10 @@
         </div>
     </section>
 @endsection
+<<<<<<< HEAD
 @push('script')
   <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
   <script>tinymce.init({ selector:'textarea' });</script>
 @endpush
+=======
+>>>>>>> 044ac0351cd86b7a3003469304d4ced60fd9866c
