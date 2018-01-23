@@ -30,5 +30,5 @@
           <li><a href="{{url('ketua/pengurus/create')}}">Tambah Pengurus</a></li>
         </ul>
   </li>
-  <li class="{{$nav_active == 'profile' ? 'active' : ''}}"><a href="{{url('admin/profile')}}"><i class="fa fa-child"></i>My Profile </a></li>
+  <li class="{{$nav_active == 'profile' ? 'active' : ''}}"><a href="{{url('ketua/profile')}}"><i class="fa fa-child"></i>My Profile </a></li>
 </ul>
