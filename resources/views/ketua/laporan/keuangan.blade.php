@@ -45,7 +45,7 @@
                         </tbody>
                         <tfoot>
                             <th colspan="4">Total</th>
-                            <th colspan="2">Rp. 10.000.000</th>
+                            <th colspan="2">Rp. 9.900.000</th>
                         </tfoot>
                     </table>
                 @endcomponent
