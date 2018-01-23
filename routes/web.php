@@ -87,6 +87,10 @@ Route::get('ketua/laporan/keuangan', function(){
     return view('ketua.laporan.keuangan');
 });
 
+Route::get('ketua/pengurus', function(){
+    return view('ketua.pengurus.index');
+});
+
 /*
 ====================================================
               BENDAHARA dan SEKRETARIS
