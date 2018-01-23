@@ -11,6 +11,7 @@
             <div class="container-fluid">
                 <div class="row">
                     @component('layouts.components.card',['class' => 'col-md-12','title' => 'Data Rapat'])
+                      <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> Tambah Rapat</button></br></br>
                         <table class="table table-bordered" id="table">
                             <thead>
                                 <tr>

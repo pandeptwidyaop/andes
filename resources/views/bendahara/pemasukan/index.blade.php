@@ -11,6 +11,7 @@
             <div class="container-fluid">
                 <div class="row">
                     @component('layouts.components.card',['class' => 'col-md-12','title' => 'Data Pemasukan'])
+                      <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> Tambah Pemasukan</button><br><br>
                         <table class="table table-bordered" id="table">
                             <thead>
                                 <tr>
@@ -25,7 +26,7 @@
                                         <td><a href="{{asset('img/nota-pemasukan.jpg')}}">
                                           <img src="{{asset('img/nota-pemasukan.jpg')}}" class="img-fluid" style="width:300px;height:175px"></a></td>
                                         <td>Sponsor Lapangan</td>
-                                        <td>200000</td>
+                                        <td>Rp. 200.000</td>
                                         <td>
                                           <center><a href="javascript:void();" onclick="editKas()"><i class="fa fa-edit"></i></a>
                                           <a href="#"><i class="fa fa-trash"></i></a></center>
@@ -35,7 +36,7 @@
                                         <td><a href="{{asset('img/nota-pengeluaran.jpg')}}">
                                           <img src="{{asset('img/nota-pengeluaran.jpg')}}" class="img-fluid" style="width:300px;height:175px"></a></td>
                                         <td>Sponsor Lapangan</td>
-                                        <td>1250000</td>
+                                        <td>Rp. 1.250.000</td>
                                         <td>
                                           <center><a href="javascript:void();" onclick="editKas()"><i class="fa fa-edit"></i></a>
                                           <a href="#"><i class="fa fa-trash"></i></a></center>
@@ -51,7 +52,7 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                     <h4 class="modal-title" id="">Edit Data Kas</h4>
+                     <h4 class="modal-title" id="">Edit Data Pemasukan</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">

@@ -28,7 +28,7 @@
                              </div>
                              <div class="form-group">
                                <label for="">Hasil Rapat</label>
-                               <textarea class="form-control" id="" placeholder="" rows="5"></textarea>
+                               <textarea></textarea>
                              </div>
                                 <button type="button"class="btn btn-primary pull-right">Simpan</button>
                             </div>
@@ -39,3 +39,7 @@
         </div>
     </section>
 @endsection
+@push('script')
+  <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+  <script>tinymce.init({ selector:'textarea' });</script>
+@endpush

@@ -9,8 +9,13 @@
         @endcomponent
         <section class="forms">
             <div class="container-fluid">
+              <div class="alert alert-info">
+                  Halaman pendaftaran anggota untuk ormawa <strong>HIMAPRODI Sistem Informasi</strong> periode <strong>2015/2016</strong> adalah : <a href="{{url("registrasi/himaprodi-sistem-informasi#2015-2016")}}">{{url("registrasi/himaprodi-sistem-informasi#2015-2016")}}</a> <br>
+                  Untuk menonaktifkan halaman registrasi silakan <a href="#">klik disini.</a>
+              </div>
                 <div class="row">
                     @component('layouts.components.card',['class' => 'col-md-12','title' => 'Data Anggota'])
+                      <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> Tambah Anggota</button>
                         <br><br>
                         <table class="table" id="table">
                             <thead>
