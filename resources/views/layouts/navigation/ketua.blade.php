@@ -17,8 +17,8 @@
           <i class="fa fa-address-book-o"></i>Laporan
       </a>
         <ul id="laporanDropdown" class="collapse list-unstyled ">
-          <li><a href="{{url('ketua/laporan/anggota')}}">Anggota</a></li>
-          <li><a href="{{url('ketua/laporan/keuangan')}}">Keuangan</a></li>
+          <li><a href="{{url('ketua/laporan/anggota')}}">Laporan Absen Anggota</a></li>
+          <li><a href="{{url('ketua/laporan/keuangan')}}">Laporan Keuangan</a></li>
         </ul>
   </li>
   <li class="{{$nav_active == 'pengurus' ? 'active' : ''}}">

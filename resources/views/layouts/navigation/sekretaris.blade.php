@@ -39,7 +39,7 @@
   <li class="{{$nav_active == 'laporan' ? 'active' : ''}}">
     <a href="#dropdownLaporan" aria-expanded="false" data-toggle="collapse"><i class="fa fa-paper-plane"></i>Laporan </a>
     <ul id="dropdownLaporan" class="collapse list-unstyled ">
-      <li><a href="{{asset('sekretaris/laporan-anggota')}}">Laporan Anggota</a></li>
+      <li><a href="{{asset('sekretaris/laporan-anggota')}}">Laporan Absen Anggota</a></li>
       <li><a href="{{asset('sekretaris/laporan-surat-masuk')}}">Laporan Surat Masuk</a></li>
       <li><a href="{{asset('sekretaris/laporan-surat-keluar')}}">Laporan Surat Keluar</a></li>
     </ul>
