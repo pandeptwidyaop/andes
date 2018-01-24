@@ -155,6 +155,9 @@ Route::get('/sekretaris/tambah-anggota', function(){
 Route::get('/sekretaris/data-absen', function(){
   return view('sekretaris.absen.index');
 });
+Route::get('/sekretaris/data-absen/view', function(){
+  return view('sekretaris.absen.view');
+});
 Route::get('/sekretaris/tambah-absen', function(){
   return view('sekretaris.absen.create');
 });

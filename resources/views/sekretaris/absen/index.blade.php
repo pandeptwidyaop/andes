@@ -13,72 +13,40 @@
                     @component('layouts.components.card',['class' => 'col-md-12','title' => 'Data Absensi'])
                       <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> Tambah Absen</button>
                         <br><br>
-                        <table class="table table-bordered" id="table">
+                        <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <td rowspan="2"><h4>NIM</h4></td>
-                                    <td rowspan="2"><h4>Nama</h4></td>
-                                    <td colspan="5"><h4>Absen</h4></td>
+                                    <th rowspan="2">Tanggal</th>
+                                    <th rowspan="2">Judul Absen</th>
+                                    <th colspan="3">Kehadiran</th>
+                                    <th rowspan="2">User</th>
+                                    <th rowspan="2">#</th>
                                 </tr>
                                 <tr>
-                                    <td><center>I</center></td>
-                                    <td><center>S</center></td>
-                                    <td><center>A</center></td>
+                                    <th>H</th>
+                                    <th>I</th>
+                                    <th>A</th>
                                 </tr>
                             </thead>
                             <tbody>
-                              <tr>
-                                <td>150030010</td>
-                                <td>I Gede Pradipta Adi Nugraha</td>
-                                <td><center><label class="radio-inline"><input type="radio" name="optradio"></center></label></td>
-                                <td><center><label class="radio-inline"><input type="radio" name="optradio"></center></label></td>
-                                <td><center><label class="radio-inline"><input type="radio" name="optradio"></center></label></td>
-                              </tr>
+                                <tr>
+                                    <td>19 Oktober 2017</td>
+                                    <td>Rapat Perdana</td>
+                                    <td>76</td>
+                                    <td>1</td>
+                                    <th>5</th>
+                                    <td>{{config('master.users.sekretaris.name')}}</td>
+                                    <td><a href="{{url('sekretaris/data-absen/view')}}" class="btn btn-primary btn-xs">
+                                        Absen
+                                    </a></td>
+                                </tr>
                             </tbody>
                         </table>
-                        <button type="button" class="btn btn-primary pull-right" style="margin-right:35px;margin-top:10px">Simpan</button>
                     @endcomponent
                 </div>
             </div>
 
-            <div class="container-fluid">
-                <div class="row">
-                    @component('layouts.components.card',['class' => 'col-md-12','title' => 'Data Absensi'])
-                      <p style="font-size:20px;margin-bottom:-5px">Anggota yang belum terdaftar pada absen : Rapat Perdana</p>
-                        <p style="font-size:15px">Centang untuk memasukkan anggota ke absen.</p>
 
-                        <table class="table table-bordered" id="table">
-                            <thead>
-                                <tr>
-                                    <th>NIM</th>
-                                    <th>Nama</th>
-                                    <th>Email</th>
-                                    <th>Handphone</th>
-                                    <th>Jenis Kelamin</th>
-                                    <th>Opsi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                              @for ($i=1; $i < 2; $i++)
-                                @foreach (json_decode(config('master.members')) as $member)
-                                    <tr>
-                                        <td>{{$member->nim}}</td>
-                                        <td>{{$member->name}}</td>
-                                        <td>{{$member->email}}</td>
-                                        <td>{{$member->handphone}}</td>
-                                        <td>{{$member->sex}}</td>
-                                        <td>
-                                          <center><input class="form-check-input" style="margin-left:-4px" type="checkbox" id="inlineCheckbox1"></center>
-                                        </td>
-                                    </tr>
-                                @endforeach
-                              @endfor
-                            </tbody>
-                        </table>
-                        <button type="button" class="btn btn-primary pull-right" style="margin-right:35px;margin-top:10px">Simpan</button>
-                    @endcomponent
-                </div>
-            </div>
         </section>
     @endsection
     @push('css')
@@ -94,7 +62,7 @@
     @push('js')
         <script type="text/javascript">
             $(function(){
-                var e = $("#table").DataTable({
+                var e = $("table").DataTable({
                     responsive:{details:!1}});
 
                     $(document).on("sidebarChanged",function(){
