@@ -41,7 +41,7 @@
                       <input id="login-password" type="password" name="loginPassword" required="" class="input-material">
                       <label for="login-password" class="label-material">Password</label>
                     </div><a id="login" href="index.html" class="btn btn-primary">Login</a>
-                  </form><a href="#" class="forgot-pass">Forgot Password?</a><br><small>Do not have an account? </small><a href="register.html" class="signup">Signup</a>
+                  </form>
                 </div>
               </div>
             </div>
