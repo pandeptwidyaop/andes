@@ -23,7 +23,6 @@
                                 <th>Level Akses</th>
                                 <th>Opsi</th>
                             </tr>
-
                         </thead>
                         <tbody>
                             @foreach (config('master.users') as $key => $user)

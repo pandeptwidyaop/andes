@@ -111,6 +111,10 @@ Route::get('ketua/pengurus', function(){
     return view('ketua.pengurus.index');
 });
 
+Route::get('ketua/pengurus/create', function(){
+    return view('ketua.pengurus.create');
+});
+
 Route::get('ketua/profile', function(){
     return view('ketua.profile.index');
 });
