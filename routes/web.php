@@ -110,6 +110,10 @@ Route::get('/bendahara/dashboard', function(){
 Route::get('/bendahara/kas', function(){
   return view('bendahara.kas.index');
 });
+
+Route::get('/bendahara/kas/view', function(){
+  return view('bendahara.kas.view');
+});
 Route::get('/bendahara/tambah-kas', function(){
   return view('bendahara.kas.create');
 });

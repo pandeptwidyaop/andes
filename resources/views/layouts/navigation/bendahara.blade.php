@@ -5,7 +5,7 @@
     </li>
     <li class="{{$nav_active == 'kas' ? 'active' : ''}}">
       <a href="#dropdownKas" aria-expanded="false" data-toggle="collapse">
-        <i class="fa fa-group"></i>Kas
+        <i class="fa fa-group"></i>Kas Anggota
       </a>
       <ul id="dropdownKas" class="collapse list-unstyled ">
         <li><a href="{{asset('bendahara/kas')}}">Data Kas</a></li>

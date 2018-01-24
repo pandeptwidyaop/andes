@@ -12,33 +12,36 @@
                 <div class="row">
                     @component('layouts.components.card',['class' => 'col-md-12','title' => 'Data Kas'])
                         <table class="table table-bordered" id="table">
+                            <a href="{{url('bendahara/tambah-kas')}}" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah Kas Anggota</a>
+                            <br><br>
                             <thead>
                                 <tr>
-                                    <th><center>Kas</center></th>
-                                    <th><center>Nominal</center></th>
-                                    <th><center>Tanggal</center></th>
-                                    <th><center>Opsi</center></th>
+                                    <th rowspan="2"><center>Tanggal</center></th>
+                                    <th rowspan="2"><center>Judul</center></th>
+                                    <th rowspan="2">Nominal</th>
+                                    <th colspan="2"><center>Pembayaran</center></th>
+                                    <th rowspan="2">User</th>
+                                    <th rowspan="2">Total</th>
+                                    <th rowspan="2"><center>Opsi</center></th>
+                                </tr>
+                                <tr>
+                                    <th>Bayar</th>
+                                    <th>Belum bayar</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                    <tr>
-                                        <td>Pelatihan Ormawa</td>
-                                        <td>550000</td>
-                                        <td>25 Desember 2017</td>
-                                        <td>
-                                          <center><a href="javascript:void();" onclick="editKas()"><i class="fa fa-edit"></i></a>
-                                          <a href="#"><i class="fa fa-trash"></i></a></center>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bazzar</td>
-                                        <td>5500000</td>
-                                        <td>10 Januari 2018</td>
-                                        <td>
-                                          <center><a href="javascript:void();" onclick="editKas()"><i class="fa fa-edit"></i></a>
-                                          <a href="#"><i class="fa fa-trash"></i></a></center>
-                                        </td>
-                                    </tr>
+                                <tr>
+                                    <td>19 Oktober 2017</td>
+                                    <td>Kas Rapat Perdana</td>
+                                    <td>Rp. 10.000</td>
+                                    <td>75</td>
+                                    <td>8</td>
+                                    <td>{{config('master.users.bendahara.name')}}</td>
+                                    <td>Rp. 750.000</td>
+                                    <td>
+                                        <a href="{{url('bendahara/kas/view')}}" class="btn btn-primary btn-sm">Lihat</a>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     @endcomponent
